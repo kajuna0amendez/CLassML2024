@@ -1,0 +1,55 @@
+absl-py==2.1.0
+annotated-types==0.6.0
+boto3==1.35.90
+botocore==1.35.90
+build==1.2.1
+certifi==2024.12.14
+charset-normalizer==3.4.1
+chex==0.1.86
+click==8.1.7
+etils==1.7.0
+exceptiongroup==1.2.2
+-e git+https://github.com/google/flax.git@83d118ad369a470527e8ec6cd3b988fba5d4fd3e#egg=flax
+fsspec==2024.3.1
+idna==3.10
+importlib_resources==6.4.0
+iniconfig==2.0.0
+-e git+https://github.com/google/jax.git@cd7251190403cfb68480d8aa90536c54abbf2278#egg=jax
+jaxlib @ file:///opt/jax/dist/jaxlib-0.4.26-cp310-cp310-manylinux2014_x86_64.whl#sha256=c4d101c0b83f5b05a20a7a0edfea728603826d2556ae6085f1f9d98338ed191f
+jmespath==1.0.1
+joblib==1.4.2
+markdown-it-py==3.0.0
+mdurl==0.1.2
+metaflow==2.13
+ml-dtypes==0.4.0
+msgpack==1.0.8
+nest-asyncio==1.6.0
+numpy==1.26.4
+opt-einsum==3.3.0
+optax==0.2.2
+orbax-checkpoint==0.5.10
+packaging==24.0
+pip-tools==7.4.1
+pluggy==1.5.0
+protobuf==5.26.1
+pydantic==2.7.1
+pydantic_core==2.18.2
+Pygments==2.18.0
+pyproject_hooks==1.1.0
+pytest==8.3.4
+python-dateutil==2.9.0.post0
+PyYAML==6.0.1
+requests==2.32.3
+rich==13.7.1
+s3transfer==0.10.4
+scikit-learn==1.6.0
+scipy==1.13.0
+six==1.17.0
+tensorstore==0.1.59
+threadpoolctl==3.5.0
+tomli==2.0.1
+toolz==0.12.1
+transformer-engine @ file:///opt/transformer-engine/dist/transformer_engine-1.5.0+2f86b8b-cp310-cp310-linux_x86_64.whl#sha256=fb90543eeefbd54a2d0dfa92edd86e6d3d6e0c620ca7075d57c201adf69b9e86
+typing_extensions==4.11.0
+urllib3==2.3.0
+zipp==3.18.1
