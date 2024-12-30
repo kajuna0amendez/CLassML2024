@@ -1,18 +1,10 @@
 """
 Build the Pydantic models for the FastAPI application.
 """
+#pylint: disable=too-few-public-methods
 from typing import List
-from pydantic import BaseModel, Field, field_validator
-
-class ForbidExtraFields(BaseModel):
-    """
-    Pydantic model to forbid extra fields in the request body
-    """
-    class Config:
-        """
-        Pydantic model configuration
-        """
-        extra = 'forbid'
+from pydantic import Field, field_validator
+from backend.pydantic_models import ForbidExtraFields
 
 
 class FeatureRow(ForbidExtraFields):
@@ -47,7 +39,7 @@ class FeatureRow(ForbidExtraFields):
         return v
 
 
-class LinearRegressionInput(BaseModel):
+class LinearRegressionInput(ForbidExtraFields):
     """
     Pydantic model for the input data to the FastAPI application
     """

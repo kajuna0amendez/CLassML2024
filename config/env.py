@@ -8,7 +8,7 @@ def set_username(username: str="Andres Mendez")-> None:
     Set the username
     """
     os.environ["USERNAME"] = username
-    
+
 
 def eliminate_preallocate_memory()-> None:
     """

@@ -1,12 +1,16 @@
+"""
+Services for linear regression
+"""
+from typing import Dict
 from fastapi import APIRouter
 from backend.pydantic_models import LinearRegressionInput
-from typing import Dict
+
 
 router = APIRouter()
 
 @router.post("/linear_regression")
-async def linear_regression(input: LinearRegressionInput)-> Dict:
+async def linear_regression(data: LinearRegressionInput)-> Dict:
     """
     Perform linear regression on the input data
     """
-    return {"input": input, "output": "some output"}
+    return {"input": data, "output": "some output"}
