@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import uvicorn
-from api import linear_regression_router
+from backend.api import linear_regression_router
 
 app = FastAPI()
 

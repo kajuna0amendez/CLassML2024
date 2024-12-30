@@ -26,3 +26,5 @@
 |   |-- core
 |-- tests
 ```
+
+# How to use the API

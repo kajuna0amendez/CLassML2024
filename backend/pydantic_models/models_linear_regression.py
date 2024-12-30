@@ -22,7 +22,7 @@ class FeatureRow(ForbidExtraFields):
     x_data: List[float] = Field(..., alias="xData")
     y_label: int = Field(..., alias="yLabel")
 
-    @field_validator("xData")
+    @field_validator("x_data")
     @classmethod
     def check_xdata(cls, v):
         """
@@ -34,7 +34,7 @@ class FeatureRow(ForbidExtraFields):
             raise ValueError("All elements in 'total' must be floats.")
         return v
 
-    @field_validator("yLabel")
+    @field_validator("y_label")
     @classmethod
     def check_ylabel(cls, v):
         """

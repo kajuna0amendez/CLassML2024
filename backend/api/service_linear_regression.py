@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from pydantic_models import LinearRegressionInput
+from backend.pydantic_models import LinearRegressionInput
 from typing import Dict
 
 router = APIRouter()
