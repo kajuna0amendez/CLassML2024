@@ -2,7 +2,7 @@
 Example of linear regression using jax and pure functions
 """
 import jax.numpy as jnp
-from backend.ml_models.linear_regression import predict, fit
+from backend.ml_learn.regression.linear_regression import predict, fit
 from config import eliminate_preallocate_memory
 
 eliminate_preallocate_memory()

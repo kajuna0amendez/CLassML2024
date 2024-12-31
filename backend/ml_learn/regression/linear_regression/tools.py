@@ -22,7 +22,7 @@ def loss_and_gradients(x_data: ndarray, y: ndarray, weights: ndarray, bias: ndar
     weights = jnp.asarray(weights, dtype=jnp.float32)
     bias = jnp.asarray(bias, dtype=jnp.float32)
     x_data = jnp.asarray(x_data, dtype=jnp.float32)
-    y = jnp.asarray(y, dtype=jnp.float32) 
+    y = jnp.asarray(y, dtype=jnp.float32)
     # Compute the loss and its gradients w.r.t. weights and bias
     loss = mean_squared_error(x_data, y, weights, bias)
     grads = grad(mean_squared_error, argnums=[2, 3])(x_data, y, weights, bias)
