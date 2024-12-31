@@ -16,15 +16,26 @@
 # Project Structure
 ```
 |-- backend
+|   |-- api
 |   |-- core
-|   |-- models
-|   |   |-- linear_regression
-|   |-- utils
+|   |-- ml_learn
+|   |   |-- classification
+|   |   |   `-- binary_lr_classification
+|   |   |-- normalization
+|   |   `-- regression
+|   |       `-- linear_regression
+|   |-- pydantic_models
+|   `-- utils
 |-- config
+|-- data
+|   |-- binary_classification
+|   `-- regression
 |-- examples
 |-- frontend
-|   |-- core
-|-- tests
+|   `-- core
+`-- tests
+    |-- linear_regression
+    `-- lr_binary_classification
 ```
 
 # How to use the API

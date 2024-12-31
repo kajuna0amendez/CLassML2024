@@ -39,7 +39,7 @@ class FeatureRow(ForbidExtraFields):
         return v
 
 
-class LinearRegressionInput(ForbidExtraFields):
+class DataInput(ForbidExtraFields):
     """
     Pydantic model for the input data to the FastAPI application
     """

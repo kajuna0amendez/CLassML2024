@@ -8,9 +8,19 @@ from backend.pydantic_models import LinearRegressionInput
 
 router = APIRouter()
 
-@router.post("/linear_regression")
+@router.post("/fit")
 async def linear_regression(data: LinearRegressionInput)-> Dict:
     """
     Perform linear regression on the input data
     """
+    
+    return {"input": data, "output": "some output"}
+
+
+@router.post("/predict")
+async def linear_regression(data: LinearRegressionInput)-> Dict:
+    """
+    Perform linear regression on the input data
+    """
+    
     return {"input": data, "output": "some output"}
